@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+
+    --cor-texto-h2:rgb(13, 39, 80);
+    --menu-bar: hsl(0, 0%, 100%);
+    --section-one: hsl(237, 28%, 16%);
+}
+
+/* Estilizacao do menu  */
+.menu .container-menu li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+/*Evento mouse on click  */
+.menu .container-menu li :hover {
+    background: rgb(219, 114, 39);
+    color: white;
+}
+
+.menu .container-menu li a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    background: var(--menu-bar);
+}
+
+.container-menu {
+    display: flex;
+}
+
+/* Menu Toggle (Hamburger) */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 4px 0;
+    transition: 0.3s;
+    margin-right: 30px;
+
+}
+
+/*Fim da estilizacao do menu  */
+
+
+/*Estilizacao do Header   */
+.header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/imagem\ \(26\).jpg);
+    backface-visibility: 30%; 
+    background-size: cover;
+    align-items: center;
+}
+
+.header .text-header h2 {
+    font-size: 10vmin;
+    color: rgb(198, 100, 31);
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 250px;
+}
+
+.header .text-header h2 b {
+    color: rgb(13, 39, 80);
+}
+
+/*Fim da estilizacao do header*/
+
+
+
+/*Inicio da section1  */
+#section1 {
+    height: 800px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#section1 .text1 {
+    color: rgb(0, 0, 0);
+
+    width: 50%;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+#section1 .text1 h2 {
+    font-size: 8vmin;
+    color: rgb(219, 114, 39);
+
+
+}
+
+
+#section1 .line {
+    width: 450px;
+    height: 2px;
+    background: rgb(219, 114, 39);
+    ;
+}
+
+#section1 .text1 h2 b {
+    color: rgb(13, 39, 80);
+}
+
+#section1 .text1 {
+    font-size: 18px;
+}
+
+#section1 .img1 {
+    width: 50%;
+    padding: 30px;
+    margin-right: 20px;
+}
+
+#section1 .img1 img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/*Inicio de diferencial*/
+.diferencial .container {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.diferencial h2 {
+    font-size: 8vmin;
+    text-align: center;
+    color: var(--cor-texto-h2)
+}
+
+.diferencial .card-diferencial img {
+    width: 100px;
+
+}
+
+.diferencial .card-diferencial h3 {
+    margin: 13px 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.diferencial .card-diferencial {
+    width: 20%;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgb(204, 128, 69);
+    text-align: center;
+    color: white;
+    margin: 0px auto;
+}
+
+
+
+/* Inicio da Seccao servicos*/
+#Servicos {
+    margin-top: 20vmin;
+    background: rgb(204, 128, 69);
+    height: 900px;
+    padding-top: 30px;
+}
+
+#Servicos .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#Servicos .container .card {
+    width: 30%;
+}
+
+#Servicos h2 {
+    font-size: 8vmin;
+    text-align: center;
+    color: white;
+}
+
+#Servicos .container .card {
+    cursor: pointer;
+    background: rgb(171, 104, 52);
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+
+#Servicos .container .card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#Servicos .container .card p {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+
+/* Portfolio */
+
+#Portfolio {
+    height: 1000px;
+    background: rgb(227, 227, 251);
+}
+
+#Portfolio h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 8vmin;
+    text-align: center;
+    color: var(--cor-texto-h2)
+}
+
+#Portfolio .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Portfolio .container .card {
+    width: 30%;
+    margin: 0px 10px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+/*Contacto */
+
+#contacto .container {
+    display: flex;
+    align-items: center;
+    background: rgb(171, 104, 52);
+    padding: 30px;
+    margin: auto;
+    width: 100%;
+    color: aliceblue;
+
+}
+
+#contacto h2 {
+    font-size: 8vmin;
+    text-align: center;
+    color: var(--cor-texto-h2)
+
+}
+
+#contacto .container .div1 {
+    margin: 0 10px;
+    width: 50%;
+    text-align: left;
+    margin-left: 60px;
+    font-size: 20px;
+}
+/*Validade dos input  */
+#contacto .container .div1 input:invalid{
+    border: solid 1px red;
+}
+#contacto .container .div1 textarea:invalid{
+    border: solid 1px red;
+}
+#contacto .container .div1 input:valid{
+    border: solid 1px green;
+}
+#contacto .container .div1 textarea:valid{
+    border: solid 1px green;
+}
+/*Fim de validade dos input */
+
+#contacto .container .div1 input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #00000098;
+    background-color: white;
+}
+
+#contacto .container .div1 textarea {
+    border: none;
+    outline: none;
+}
+
+#contacto .container .div1 button {
+    font-size: 18px;
+    border: none;
+    padding: 20px;
+    outline: none;
+    border-radius: 14px;
+    color: white;
+    background: rgb(81, 48, 23);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#contacto .container .div2 {
+    margin: 0 10px;
+    width: 50%;
+    text-align: left;
+    font-size: 20px;
+}
+footer {
+    background-color:rgb(48, 26, 8);
+    text-align: center;
+}
+ 
+footer .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: inline-block;
+    color: white;
+}
+
+
+/*---------------------------------------------------------------------------------------------*/
+
+/*Responsividade*/
+
+
+@media(max-width:1000px) {
+    .diferencial .container {
+        flex-direction: column;
+    }
+
+    .diferencial .container .card-diferencial {
+        width: 80%;
+        margin: 30px auto;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .container-menu {
+        display: none;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 0;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .container-menu.active {
+        display: flex;
+        transition: 0.3s ease-in-out;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .container-menu a {
+        padding: 15px;
+        text-align: center;
+        border-top: 1px solid #444;
+    }
+
+    .container-menu a:first-child {
+        border-top: none;
+    }
+
+    #section1 {
+        flex-direction: column;
+        margin-top: 30px;
+        
+    }
+    #section1 .text1 {
+        width: 100%;
+    }
+
+    #section1 .img1 {
+        width: auto;
+        height:auto;  
+        margin: 0px auto;
+    }
+    
+
+     /*#section1 .img1 img {
+      
+       
+    }
+      */
+    .diferencial {
+        margin-top: auto;
+        height: auto;
+    }
+
+
+    .diferencial .container {
+        flex-direction: column;
+    }
+
+    .diferencial .container .card-diferencial {
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    /*Servicos */
+
+    #Servicos {
+        height:auto;
+        margin-top: 10px;
+        
+    }
+
+    #Servicos .container {
+        flex-direction: column;
+
+
+    }
+
+    #Servicos .container .card {
+        width: auto;
+        padding: 20px;
+        margin: 10px auto;
+
+    }
+
+    #Servicos .container .card img {
+        width: 100%;
+    }
+
+    #Portfolio {
+        margin-top: 150px;
+        height: auto;
+    }
+
+    #Portfolio .container {
+        flex-direction: column;
+    }
+
+    #Portfolio .container .card {
+        width: 100%;
+        padding: 20px;
+        margin-top: 5px;
+
+    }
+
+    #Portfolio .container .card img {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin-top: 2px;
+    }
+
+    #contacto .container {
+        flex-direction: column;
+        margin: 0px auto;
+      
+       
+    }
+
+    #contacto .container .div1 input {
+      width: 100%;
+    }
+
+    #contacto .container .div1 textarea {
+        align-items: center;
+        width: 100%;
+    }
+
+
+    #contacto.container .div2 {
+        width: auto;
+        text-align: center;
+
+    }
+}
